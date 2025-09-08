@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Portfolio Demo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1> My Portfolio</h1>
+    <button id="open-modal" class="btn">Contact Me</button>
+  </header>
+
+  <main>
+    <!-- Animated card -->
+    <section>
+      <h2>Projects</h2>
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <h3>Project A</h3>
+          </div>
+          <div class="card-back">
+            <p>Built with HTML, CSS, JS</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Form with JS function -->
+    <section>
+      <h2>Quick Quote Calculator</h2>
+      <form id="quote-form">
+        <label>
+          Hours of Work:
+          <input type="number" id="hours" required>
+        </label>
+        <label>
+          Rate per Hour ($):
+          <input type="number" id="rate" required>
+        </label>
+        <button type="submit" class="btn">Calculate</button>
+      </form>
+      <p id="quote-result"></p>
+    </section>
+  </main>
+
+  <!-- Modal -->
+  <div id="modal" class="modal hidden">
+    <div class="modal-content">
+      <span id="close-modal">&times;</span>
+      <h2>Contact Me</h2>
+      <p>Email: example@domain.com</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
